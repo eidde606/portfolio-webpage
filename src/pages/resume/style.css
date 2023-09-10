@@ -1,0 +1,30 @@
+.resume-download-link {
+  display: flex;
+  width: 100%;
+  /* Make the link take up the full width of its container */
+  text-align: center;
+  /* Center the text */
+  margin-bottom: 20px;
+  /* Add some top margin for spacing */
+}
+
+.resume-download-link .icon {
+  margin-right: 8px;
+}
+
+/* style.css */
+
+/* Default icon size */
+
+.responsive-icon {
+  font-size: 16px;
+}
+
+/* Media query for screens smaller than 768px (adjust as needed) */
+
+@media (max-width: 768px) {
+  .responsive-icon {
+    font-size: 16px;
+    /* Adjust the icon size for smaller screens */
+  }
+}
