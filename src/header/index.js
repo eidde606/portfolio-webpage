@@ -59,6 +59,12 @@ const Headermain = () => {
                       Contact
                     </Link>
                   </li>
+                  <li className="menu_item">
+                    <Link onClick={handleToggle} to="/resume" className="my-3">
+                      {" "}
+                      Resume
+                    </Link>
+                  </li>
                 </ul>
               </div>
             </div>
