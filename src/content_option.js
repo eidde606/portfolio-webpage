@@ -1,4 +1,5 @@
 import eddieanime2 from "./assets/images/eddieanime2.jpg";
+import landscaping from "./assets/images/landscaping.png";
 import myreads from "./assets/images/myreads.jpeg";
 import portfolio2 from "./assets/images/portfolio2.png";
 
@@ -76,6 +77,12 @@ const dataportfolio = [
     description:
       "A personal web portfolio highlighting my journey as a Junior React Developer enthusiast. Discover projects, skills, and connect for potential collaborations.",
     link: "#",
+  },
+  {
+    img: landscaping,
+    description:
+      "Greetings! Join us on our journey to enhance outdoor spaces. This evolving website reflects our dedication to exceptional landscaping solutions. Please note that it is a work in progress and not yet complete.",
+    link: "https://jocular-melomakarona-435b13.netlify.app",
   },
 ];
 
