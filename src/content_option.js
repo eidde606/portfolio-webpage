@@ -90,8 +90,8 @@ const contactConfig = {
 };
 
 const socialprofils = {
-  github: "https://github.com/",
-  linkedin: "https://linkedin.com/",
+  github: "https://github.com/eidde606?tab=repositories",
+  linkedin: "https://www.linkedin.com/in/eddie-nazario-20b2a320a/",
 };
 export {
   contactConfig,
