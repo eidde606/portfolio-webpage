@@ -1,0 +1,212 @@
+/* Apply styles only to the chat app container */
+
+.chat-app {
+  background-color: #000000;
+  /* Updated background color */
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  /* Make the chat app fill the entire viewport height */
+}
+
+.chat-container {
+  flex-grow: 1;
+  /* Takes up all available vertical space */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  /* Pushes content to the bottom */
+  position: relative;
+  /* Allows positioning of the sign-in button */
+}
+
+.chat-app .App {
+  text-align: center;
+  max-width: 728px;
+  /* Adjust the maximum width */
+  margin: 0 auto;
+}
+
+.chat-app .App section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #282c34;
+  /* Dark background color */
+  color: white;
+  /* Text color */
+}
+
+.chat-app main {
+  padding: 10px;
+  flex-grow: 1;
+  /* Make the main content area expand to fill remaining space */
+  overflow-y: scroll;
+}
+
+.chat-app main::-webkit-scrollbar {
+  width: 8px;
+  /* Adjust scrollbar width */
+}
+
+.chat-app main::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+.chat-app main::-webkit-scrollbar-thumb {
+  background: #6649b8;
+}
+
+.chat-app form {
+  height: 10vh;
+  position: fixed;
+  bottom: 0;
+  /* Position it at the bottom of the viewport */
+  background-color: #282c34;
+  width: 100%;
+  max-width: 1847px;
+  display: flex;
+  font-size: 1.5rem;
+}
+
+/* Default button width for larger screens */
+
+.chat-app form button {
+  width: 100px;
+  /* Adjust button width as needed */
+  background-color: grey;
+  /* Updated button color */
+  margin-left: 0px;
+  /* Add some spacing between input and button */
+}
+
+.chat-app .sendbtn {
+  margin-top: 10px;
+  color: white;
+  background-color: grey;
+}
+
+/* Responsive button width for smaller screens */
+
+@media (max-width: 768px) {
+  .chat-app form button {
+    width: 250%;
+    /* Adjust this value as needed */
+  }
+}
+
+.chat-app input {
+  flex-grow: 1;
+  /* Allow the input field to grow and take available space */
+  line-height: 1.5;
+  font-size: 1.5rem;
+  background: #f0f0f0;
+  /* Light background color for input */
+  color: #282c34;
+  /* Text color for input */
+  outline: none;
+  border: none;
+  padding: 10px;
+  /* Add some rounded corners */
+}
+
+.chat-app button {
+  background-color: #56c93d;
+  /* Updated button color */
+  border: none;
+  color: white;
+  padding: 1px 5px;
+  /* Adjust button padding */
+  text-align: center;
+  text-decoration: none;
+  /* display: inline-block; */
+  cursor: pointer;
+  font-size: 1.25rem;
+}
+
+.chat-app button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.chat-app .sign-out {
+  position: relative;
+  top: 10px;
+  left: 10px;
+  color: white;
+  background: #56c93d;
+  /* Updated sign-out button color */
+  padding: 10px 10px;
+  /* Adjust sign-out button padding */
+  border-radius: 10px;
+  /* Add rounded corners to both inner and outer borders */
+  border: 2px solid #56c93d;
+  /* Add a border to the button */
+}
+
+.chat-app .sign-in {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: white;
+  background: #56c93d;
+  /* Updated sign-in button color */
+  padding: 10px 10px;
+  /* Adjust sign-in button padding */
+  border-radius: 5px;
+  /* Add some rounded corners */
+}
+
+.chat-app p {
+  position: absolute;
+  margin-top: 3.8rem;
+}
+
+.chat-app ul,
+.chat-app li {
+  text-align: left;
+  list-style: none;
+}
+
+.chat-app p {
+  max-width: 500px;
+  margin-bottom: 12px;
+  line-height: 24px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  /* Add more rounded corners */
+  position: relative;
+  color: #282c34;
+  background-color: #f0f0f0;
+  /* Light background color */
+  text-align: center;
+}
+
+.chat-app .message {
+  display: flex;
+  align-items: center;
+}
+
+.chat-app .sent {
+  flex-direction: row-reverse;
+}
+
+.chat-app .sent p {
+  color: white;
+  background: #56c93d;
+  /* Updated message background color */
+  align-self: flex-end;
+}
+
+.chat-app .received p {
+  background: #e5e5ea;
+  color: #282c34;
+}
+
+.chat-app img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 2px 5px;
+}
