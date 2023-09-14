@@ -60,6 +60,12 @@ const Headermain = () => {
                     </Link>
                   </li>
                   <li className="menu_item">
+                    <Link onClick={handleToggle} to="/chat" className="my-3">
+                      {" "}
+                      Chat
+                    </Link>
+                  </li>
+                  <li className="menu_item">
                     <Link onClick={handleToggle} to="/resume" className="my-3">
                       {" "}
                       Resume
