@@ -4,7 +4,7 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { HelmetProvider } from "react-helmet-async";
 import resume2 from "..//../assets/documents/resume2.pdf";
-import resumeImage from "..//../assets/images/resume2.png";
+import resumeImage from "..//../assets/images/resumeImage2.png";
 import "./style.css";
 
 function Resume() {
