@@ -1,4 +1,5 @@
 import eddieanime2 from "./assets/images/eddieanime2.jpg";
+import gameHub from "./assets/images/gameHub.png";
 import landscaping from "./assets/images/landscaping.png";
 import myreads from "./assets/images/myreads.jpeg";
 import portfolio2 from "./assets/images/portfolio2.png";
@@ -83,6 +84,12 @@ const dataportfolio = [
     description:
       "Greetings! Join us on our journey to enhance outdoor spaces. This evolving website reflects our dedication to exceptional landscaping solutions. Please note that it is a work in progress and not yet complete.",
     link: "https://jocular-melomakarona-435b13.netlify.app",
+  },
+  {
+    img: gameHub,
+    description:
+      "Created a responsive game catalog website with React.js and Chakra UI. Users can explore games by genre, highlighting expertise in responsive design and UI development, perfect for a web developer's portfolio.",
+    link: "https://papaya-hamster-1f1519.netlify.app",
   },
 ];
 
