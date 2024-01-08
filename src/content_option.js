@@ -1,6 +1,6 @@
+import landscaping from "./assets/images/AndreyPro.png";
 import eddieanime2 from "./assets/images/eddieanime2.jpg";
 import gameHub from "./assets/images/gameHub.png";
-import landscaping from "./assets/images/landscaping.png";
 import myreads from "./assets/images/myreads.jpeg";
 import portfolio2 from "./assets/images/portfolio2.png";
 

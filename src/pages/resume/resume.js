@@ -3,8 +3,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { HelmetProvider } from "react-helmet-async";
-import resume2 from "..//../assets/documents/resume2.pdf";
-import resumeImage from "..//../assets/images/resumeImage2.png";
+import junior from "../../assets/documents/juniorResume.pdf";
+import resumeImage from "..//../assets/images/imageResume.png";
 import "./style.css";
 
 function Resume() {
@@ -17,11 +17,7 @@ function Resume() {
             <hr className="t_border my-4 ml-0 text-left" />
             <img src={resumeImage} alt="resume" className="img-fluid"></img>
             <hr className="t_border my-2 ml-0 text-left" />
-            <a
-              href={resume2}
-              download={resume2}
-              className="resume-download-link"
-            >
+            <a href={junior} download={junior} className="resume-download-link">
               <h6 className="display-12 mb-4" style={{ marginRight: "10px" }}>
                 Download Resume
               </h6>
