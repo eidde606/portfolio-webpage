@@ -68,6 +68,12 @@ const skills = [
   {
     name: "HTML5",
   },
+  {
+    name: "NextJS",
+  },
+  {
+    name: "Typescript",
+  },
 ];
 
 const dataportfolio = [
