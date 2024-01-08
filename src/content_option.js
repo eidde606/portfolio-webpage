@@ -34,9 +34,14 @@ const dataabout = {
 };
 const worktimeline = [
   {
-    jobtitle: "Junior React Developer (Volunteer)",
+    jobtitle: "Junior React Developer",
     where: "Vet Tech IT Services LLC",
     date: "Feb 2020 - May 2022 / Midlothian, VA",
+  },
+  {
+    jobtitle: "Freelance React Developer",
+    where: "Andrey's ProLandscaping & Tree Services LLC",
+    date: "Aug 2023 - Jan 2024 / Midlothian, VA",
   },
 ];
 
