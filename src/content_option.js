@@ -3,6 +3,7 @@ import eddieanime2 from "./assets/images/eddieanime2.jpg";
 import gameHub from "./assets/images/gameHub.png";
 import myreads from "./assets/images/myreads.jpeg";
 import portfolio2 from "./assets/images/portfolio2.png";
+import todoList from "./assets/images/todoList.png";
 
 const logotext = "EN";
 const meta = {
@@ -101,6 +102,12 @@ const dataportfolio = [
     description:
       "Created a responsive game catalog website with React.js and Chakra UI. Users can explore games by genre, highlighting expertise in responsive design and UI development, perfect for a web developer's portfolio.",
     link: "https://papaya-hamster-1f1519.netlify.app",
+  },
+  {
+    img: todoList,
+    description:
+      "I built TodoList, a full-stack task management app with React and Material-UI. Users can add, edit, and delete tasks, with a responsive design for seamless usage. The app interacts with my Heroku-deployed backend, featuring MongoDB for data storage.",
+    link: "https://todolistfrontend-e161200f9920.herokuapp.com/",
   },
 ];
 

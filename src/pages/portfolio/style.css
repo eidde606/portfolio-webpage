@@ -27,7 +27,7 @@
 
 .po_item .content {
   position: absolute;
-  height: 0;
+  min-height: 105%;
   width: 0;
   top: 50%;
   left: 50%;
@@ -43,6 +43,7 @@
   transition: 0.3s ease-in-out;
   opacity: 0;
   border: 1px solid black;
+  overflow: auto;
 }
 
 .po_item .content {
