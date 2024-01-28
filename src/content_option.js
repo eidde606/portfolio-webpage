@@ -94,7 +94,7 @@ const dataportfolio = [
   {
     img: landscaping,
     description:
-      "Greetings! Our landscaping project is complete, and we invite you to explore the transformation of outdoor spaces on our journey. This evolving website reflects our dedication to exceptional landscaping solutions. Please note that it is a work in progress and not yet complete.",
+      "Explore the completed landscaping website, showcasing my dedication to exceptional outdoor solutions. This project is now actively used by a real landscaping company.",
     link: "https://jocular-melomakarona-435b13.netlify.app",
   },
   {
