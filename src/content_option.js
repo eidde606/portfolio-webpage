@@ -16,7 +16,7 @@ const introdata = {
   title: "Hi, I'm Eddie Nazario",
   animated: {
     first: "Front-End React Developer",
-    second: "Flutter Developer",
+    second: "React Native Developer",
 
     // add more if you'd like but make sure to update /src/pages/home/index.js Line 29
   },
