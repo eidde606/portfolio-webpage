@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { VscClose, VscGrabber } from "react-icons/vsc";
 import { Link } from "react-router-dom";
 import Themetoggle from "../components/themetoggle";
@@ -44,7 +44,6 @@ const Headermain = () => {
                       to="/portfolio"
                       className="my-3"
                     >
-                      {" "}
                       Projects
                     </Link>
                   </li>
@@ -55,20 +54,17 @@ const Headermain = () => {
                   </li>
                   <li className="menu_item">
                     <Link onClick={handleToggle} to="/contact" className="my-3">
-                      {" "}
                       Contact
                     </Link>
                   </li>
-                  {/* <li className="menu_item">
-                    <Link onClick={handleToggle} to="/chat" className="my-3">
-                      {" "}
-                      Chat
-                    </Link>
-                  </li> */}
                   <li className="menu_item">
                     <Link onClick={handleToggle} to="/resume" className="my-3">
-                      {" "}
                       Resume
+                    </Link>
+                  </li>
+                  <li className="menu_item">
+                    <Link onClick={handleToggle} to="/ai" className="my-3">
+                      Chat with AI
                     </Link>
                   </li>
                 </ul>

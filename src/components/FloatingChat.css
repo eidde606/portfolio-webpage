@@ -1,0 +1,49 @@
+.floating-chat-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  z-index: 1050;
+  cursor: pointer;
+  animation: pulse 2s infinite;
+  background-color: #0d6efd;
+  color: white;
+}
+
+.chat-greeting {
+  position: fixed;
+  bottom: 90px;
+  right: 20px;
+  z-index: 1050;
+  max-width: 250px;
+  padding: 10px 15px;
+  animation: fadeInUp 0.5s ease-out;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(13, 110, 253, 0.7);
+  }
+  70% {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(13, 110, 253, 0.7);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(13, 110, 253, 0.7);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

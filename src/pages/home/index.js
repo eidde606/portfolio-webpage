@@ -1,7 +1,7 @@
-import React from "react";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import Typewriter from "typewriter-effect";
+import FloatingChat from "../../components/FloatingChat";
 import { introdata, meta } from "../../content_option";
 import "./style.css";
 
@@ -83,12 +83,21 @@ export const Home = () => {
                       <div className="ring three"></div>
                     </div>
                   </Link>
+                  <Link to="/ai">
+                    <div id="button_h" className="ac_btn btn">
+                      Chat with NazborgAI
+                      <div className="ring one"></div>
+                      <div className="ring two"></div>
+                      <div className="ring three"></div>
+                    </div>
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+      <FloatingChat />
     </HelmetProvider>
   );
 };
