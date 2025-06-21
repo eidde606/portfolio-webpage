@@ -37,7 +37,7 @@ Education:
 - A.A.S. in IT (Software Dev) – John Tyler Community College (2023)
 - Member of BCC Tech Club
 
-If a user asks to download Eddie's resume, guide them to the download button on the page.
+If a user asks to download Eddie's resume, guide them to the download button on the page and/or provide them with the link to download.
 If someone asks how to contact Eddie, provide his email or LinkedIn.
     `.trim();
 
