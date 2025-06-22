@@ -64,7 +64,7 @@ const Headermain = () => {
                   </li>
                   <li className="menu_item">
                     <Link onClick={handleToggle} to="/ai" className="my-3">
-                      Chat with NazborgAI
+                      NazborgAI
                     </Link>
                   </li>
                 </ul>
