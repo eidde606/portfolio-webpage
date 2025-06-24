@@ -4,31 +4,60 @@ const AIChat = () => {
   const [prompt, setPrompt] = useState("");
   const [response, setResponse] = useState("");
   const [isThinking, setIsThinking] = useState(false);
+  const [eventLink, setEventLink] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (!prompt.trim()) return;
 
     setIsThinking(true);
-    setResponse(""); // Clear previous response
+    setResponse("");
+    setEventLink("");
 
     try {
+      // Step 1: Send to NazborgAI
       const res = await fetch("https://nazborgai-backend.onrender.com/chat", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({
-          prompt: prompt,
-        }),
+        body: JSON.stringify({ prompt }),
       });
 
       const data = await res.json();
+      const reply = data?.reply || "🤖 No response from NazborgAI.";
+      setResponse(reply);
 
-      if (data && data.reply) {
-        setResponse(data.reply);
-      } else {
-        setResponse("🤖 No response from NazborgAI.");
+      // Step 2: If it's a booking-related prompt, auto-schedule
+      const lower = prompt.toLowerCase();
+      const isBooking =
+        lower.includes("book") ||
+        lower.includes("appointment") ||
+        lower.includes("schedule") ||
+        lower.includes("meeting");
+
+      if (isBooking) {
+        const scheduleRes = await fetch(
+          "https://nazborgai-backend.onrender.com/schedule",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              name: "Website Visitor",
+              dateTime: prompt, // Send human-readable datetime
+              reason: prompt,
+            }),
+          }
+        );
+
+        const scheduleData = await scheduleRes.json();
+        if (scheduleData.success) {
+          setEventLink(scheduleData.eventLink);
+        } else {
+          console.warn("Scheduling failed:", scheduleData.error);
+        }
       }
     } catch (err) {
       console.error("Fetch error:", err);
@@ -65,6 +94,15 @@ const AIChat = () => {
           }}
         >
           <strong>NazborgAI:</strong> {response}
+        </div>
+      )}
+
+      {eventLink && (
+        <div className="mt-3">
+          📅{" "}
+          <a href={eventLink} target="_blank" rel="noopener noreferrer">
+            View your appointment
+          </a>
         </div>
       )}
     </div>
