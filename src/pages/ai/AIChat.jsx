@@ -1,5 +1,14 @@
 import { useState } from "react";
 
+// Simple Markdown-to-HTML parser for links only
+const parseLinks = (text) => {
+  if (!text) return "";
+  return text.replace(
+    /\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g,
+    '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>'
+  );
+};
+
 const AIChat = () => {
   const [prompt, setPrompt] = useState("");
   const [response, setResponse] = useState("");
@@ -15,7 +24,6 @@ const AIChat = () => {
     setEventLink("");
 
     try {
-      // Step 1: Send to NazborgAI
       const res = await fetch("https://nazborgai-backend.onrender.com/chat", {
         method: "POST",
         headers: {
@@ -26,9 +34,8 @@ const AIChat = () => {
 
       const data = await res.json();
       const reply = data?.reply || "🤖 No response from NazborgAI.";
-      setResponse(reply);
+      setResponse(parseLinks(reply)); // ⬅️ Parse any Markdown links
 
-      // Step 2: If it's a booking-related prompt, auto-schedule
       const lower = prompt.toLowerCase();
       const isBooking =
         lower.includes("book") ||
@@ -46,7 +53,7 @@ const AIChat = () => {
             },
             body: JSON.stringify({
               name: "Website Visitor",
-              dateTime: prompt, // Send human-readable datetime
+              dateTime: prompt,
               reason: prompt,
             }),
           }
@@ -55,8 +62,6 @@ const AIChat = () => {
         const scheduleData = await scheduleRes.json();
         if (scheduleData.success) {
           setEventLink(scheduleData.eventLink);
-        } else {
-          console.warn("Scheduling failed:", scheduleData.error);
         }
       }
     } catch (err) {
@@ -92,9 +97,8 @@ const AIChat = () => {
             color: "#f1f1f1",
             whiteSpace: "pre-wrap",
           }}
-        >
-          <strong>NazborgAI:</strong> {response}
-        </div>
+          dangerouslySetInnerHTML={{ __html: response }} // ⬅️ Inject HTML with clickable link
+        />
       )}
 
       {eventLink && (
