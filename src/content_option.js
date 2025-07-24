@@ -2,6 +2,7 @@ import landscaping from "./assets/images/AndreyPro.png";
 import eddieanime2 from "./assets/images/eddieanime2.jpg";
 import gameHub from "./assets/images/gameHub.png";
 import myreads from "./assets/images/myreads.jpeg";
+import pelukita from "./assets/images/pelukita.png";
 import portfolio2 from "./assets/images/portfolio2.png";
 import todoList from "./assets/images/todoList.png";
 
@@ -108,6 +109,12 @@ const dataportfolio = [
     description:
       "I built TodoList, a full-stack task management app with React and Material-UI. Users can add, edit, and delete tasks, with a responsive design for seamless usage. The app interacts with my Heroku-deployed backend, featuring MongoDB for data storage.",
     link: "https://todolistfrontend-e161200f9920.herokuapp.com/",
+  },
+  {
+    img: pelukita,
+    description:
+      "An AI-powered Facebook Messenger chatbot built for a children's party entertainment business. The bot handles full event bookings in English or Spanish through natural conversation, confirms all details, and sends email confirmations using GPT-4 and MongoDB.",
+    link: "https://m.me/pelukitasshow",
   },
 ];
 
