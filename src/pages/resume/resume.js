@@ -1,10 +1,10 @@
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { HelmetProvider } from "react-helmet-async";
-import junior from "../../assets/documents/juniorResume.pdf";
-import resumeImage from "..//../assets/images/imageResume.png";
+import resumePDF from "../../assets/documents/Eddie_Resume_Updated.pdf";
+import updateResume from "../../assets/images/updateResume.png";
+
 import "./style.css";
 
 function Resume() {
@@ -15,9 +15,9 @@ function Resume() {
           <Col lg="8">
             <h1 className="display-4 mb-4">Resume</h1>
             <hr className="t_border my-4 ml-0 text-left" />
-            <img src={resumeImage} alt="resume" className="img-fluid"></img>
+            <img src={updateResume} alt="resume" className="img-fluid" />
             <hr className="t_border my-2 ml-0 text-left" />
-            <a href={junior} download={junior} className="resume-download-link">
+            <a href={resumePDF} download className="resume-download-link">
               <h6 className="display-12 mb-4" style={{ marginRight: "10px" }}>
                 Download Resume
               </h6>

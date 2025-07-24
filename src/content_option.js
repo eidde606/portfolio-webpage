@@ -28,12 +28,15 @@ const introdata = {
 
 const dataabout = {
   title: "Who am I?",
-  aboutme:
-    "I'm Eddie Nazario, a Junior React Developer based in Hopewell, VA. With a strong background in Information Technology and a foundation in Respiratory Therapy, I bring a unique blend of skills and adaptability to web development." +
-    "I've honed my development expertise at Vet Tech IT Services LLC, collaborating in agile environments." +
-    " Proficient in React, JavaScript, CSS, HTML5, Flutter, Bootstrap, ChakraUI, and Github. I'm passionate about creating user-friendly web applications and continually expanding my skill set. Fluent in both English and Spanish, I thrive in diverse communication settings." +
-    "Let's connect and explore exciting web development opportunities together!",
+  aboutme: `I'm Eddie Nazario, a Junior React Developer based in Hopewell, VA, passionate about building user-friendly web applications.
+
+While my main focus is frontend development using React, JavaScript, and Flutter, I’ve also been expanding my skills by working on real-world projects that challenge me to learn more about backend tools and AI integration.
+
+One of my proudest projects is an AI-powered Messenger chatbot I built for my wife’s business, Pelukita’s Show. The bot helps clients book birthday parties through natural conversation in English or Spanish.
+
+I'm bilingual, detail-oriented, and constantly pushing myself to grow as a developer through hands-on experience.`,
 };
+
 const worktimeline = [
   {
     jobtitle: "Junior React Developer",
@@ -45,37 +48,28 @@ const worktimeline = [
     where: "Andrey's ProLandscaping & Tree Services LLC",
     date: "Aug 2023 - Jan 2024 / Midlothian, VA",
   },
+  {
+    jobtitle: "AI Chatbot Developer (Freelance)",
+    where: "Pelukita’s Show",
+    date: "Jul 2025 – Present / Hopewell, VA",
+  },
 ];
 
 const skills = [
-  {
-    name: "JavaScript",
-  },
-
-  {
-    name: "React",
-  },
-  {
-    name: "Flutter",
-  },
-  {
-    name: "BootStrap",
-  },
-  {
-    name: "ChakraUI",
-  },
-  {
-    name: "Github",
-  },
-  {
-    name: "HTML5",
-  },
-  {
-    name: "NextJS",
-  },
-  {
-    name: "Typescript",
-  },
+  { name: "JavaScript" },
+  { name: "React" },
+  { name: "Flutter" },
+  { name: "BootStrap" },
+  { name: "ChakraUI" },
+  { name: "Github" },
+  { name: "HTML5" },
+  { name: "NextJS" },
+  { name: "Typescript" },
+  { name: "Node.js" },
+  { name: "Express" },
+  { name: "MongoDB" },
+  { name: "OpenAI API" },
+  { name: "Gmail API" },
 ];
 
 const dataportfolio = [
