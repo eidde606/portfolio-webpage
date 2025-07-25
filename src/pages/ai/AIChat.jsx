@@ -1,22 +1,37 @@
+import { useEffect, useState } from "react";
+
 const AIChat = () => {
+  const [iframeHeight, setIframeHeight] = useState("600px");
+
+  useEffect(() => {
+    const updateHeight = () => {
+      if (window.innerWidth < 576) {
+        setIframeHeight("500px"); // Mobile
+      } else if (window.innerWidth < 992) {
+        setIframeHeight("600px"); // Tablets / small laptops
+      } else {
+        setIframeHeight("700px"); // Desktop
+      }
+    };
+
+    updateHeight();
+    window.addEventListener("resize", updateHeight);
+    return () => window.removeEventListener("resize", updateHeight);
+  }, []);
+
   return (
     <div className="container mt-4 px-3" style={{ maxWidth: "100%" }}>
       <h2 className="text-center mb-3">NazborgAI</h2>
-      <div style={{ position: "relative", width: "100%", paddingTop: "130%" }}>
-        <iframe
-          src="https://resume-chatbot-gnpn.onrender.com"
-          style={{
-            position: "absolute",
-            top: 0,
-            left: 0,
-            width: "100%",
-            height: "100%",
-            border: "none",
-            borderRadius: "10px",
-          }}
-          title="Resume Chatbot"
-        ></iframe>
-      </div>
+      <iframe
+        src="https://resume-chatbot-gnpn.onrender.com"
+        style={{
+          width: "100%",
+          height: iframeHeight,
+          border: "none",
+          borderRadius: "10px",
+        }}
+        title="Resume Chatbot"
+      ></iframe>
     </div>
   );
 };
