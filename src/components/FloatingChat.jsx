@@ -16,7 +16,7 @@ const FloatingChat = () => {
     <>
       {greetingVisible && (
         <div className="chat-greeting alert alert-info shadow">
-          👋 Hi there! Ask me anything.
+          👋 NazborgAI here! Ask me anything about Eddie’s resume.
         </div>
       )}
 
