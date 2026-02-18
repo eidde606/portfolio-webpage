@@ -5,6 +5,7 @@ import myreads from "./assets/images/myreads.jpeg";
 import pelukita from "./assets/images/pelukita.png";
 import portfolio2 from "./assets/images/portfolio2.png";
 import todoList from "./assets/images/todoList.png";
+import vacation from "./assets/images/vacation.png";
 
 const logotext = "EN";
 const meta = {
