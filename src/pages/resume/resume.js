@@ -2,7 +2,7 @@ import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Col, Container, Row } from "react-bootstrap";
 import { HelmetProvider } from "react-helmet-async";
-import resumePDF from "../../assets/documents/Eddie_Resume_Updated.pdf";
+import resumePDF from "../../assets/documents/SoftwareEngineer1.pdf";
 import updateResume from "../../assets/images/updateResume.png";
 
 import "./style.css";

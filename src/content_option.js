@@ -10,32 +10,33 @@ const logotext = "EN";
 const meta = {
   title: "Eddie Nazario",
   description:
-    "I'm Eddie Nazario, a Junior React Developer and Flutter Developer enthusiast.",
+    "Java / Spring Boot Developer specializing in REST APIs, relational databases, and production-ready backend systems.",
 };
 
 const introdata = {
   title: "Hi, I'm Eddie Nazario",
   animated: {
-    first: "Front-End React Developer",
-    second: "React Native Developer",
-
-    // add more if you'd like but make sure to update /src/pages/home/index.js Line 29
+    first: "Java / Spring Boot Developer",
+    second: "Backend REST API Engineer",
+    third: "Full-Stack System Builder",
   },
   description:
-    "Passionate about crafting seamless user experiences through React development and Flutter.",
+    "I design and build backend-first systems using Java, Spring Boot, and relational databases, then connect them to modern frontends for complete cloud deployments.",
   your_img_url: eddieanime2,
 };
 
+
 const dataabout = {
   title: "Who am I?",
-  aboutme: `I'm Eddie Nazario, a Junior React Developer based in Hopewell, VA, passionate about building user-friendly web applications.
+  aboutme: `I'm Eddie Nazario, a Java backend developer based in Hopewell, VA.
 
-While my main focus is frontend development using React, JavaScript, and Flutter, I’ve also been expanding my skills by working on real-world projects that challenge me to learn more about backend tools and AI integration.
+I specialize in building REST APIs using Spring Boot, Spring Data JPA/REST, and relational databases. My focus is backend architecture, entity relationships, and production-style deployments.
 
-One of my proudest projects is an AI-powered Messenger chatbot I built for my wife’s business, Pelukita’s Show. The bot helps clients book birthday parties through natural conversation in English or Spanish.
+I build full-stack systems by connecting robust Java backends to Angular or React frontends, deploying them to cloud environments with live database integrations.
 
-I'm bilingual, detail-oriented, and constantly pushing myself to grow as a developer through hands-on experience.`,
+I’m bilingual (English/Spanish), detail-oriented, and focused on delivering systems that are structured, scalable, and production-ready.`,
 };
+
 
 const worktimeline = [
   {
@@ -56,21 +57,24 @@ const worktimeline = [
 ];
 
 const skills = [
-  { name: "JavaScript" },
+  { name: "Java" },
+  { name: "Spring Boot" },
+  { name: "REST APIs" },
+  { name: "Spring Data JPA" },
+  { name: "Hibernate" },
+  { name: "SQL" },
+  { name: "PostgreSQL" },
+  { name: "MySQL" },
+  { name: "Maven" },
+  { name: "Git / GitHub" },
+  { name: "Docker (Basic)" },
+
+  { name: "Angular" },
   { name: "React" },
-  { name: "Flutter" },
-  { name: "BootStrap" },
-  { name: "ChakraUI" },
-  { name: "Github" },
-  { name: "HTML5" },
-  { name: "NextJS" },
-  { name: "Typescript" },
-  { name: "Node.js" },
-  { name: "Express" },
-  { name: "MongoDB" },
-  { name: "OpenAI API" },
-  { name: "Gmail API" },
+  { name: "TypeScript" },
+  { name: "JavaScript" }
 ];
+
 
 const dataportfolio = [
   {
@@ -110,6 +114,13 @@ const dataportfolio = [
       "An AI-powered Facebook Messenger chatbot built for a children's party entertainment business. The bot handles full event bookings in English or Spanish through natural conversation, confirms all details, and sends email confirmations using GPT-4 and MongoDB.",
     link: "https://m.me/pelukitasshow",
   },
+  {
+    img: vacation, 
+    description:
+    "Full-stack Vacation Planning system built with Spring Boot REST (Spring Data JPA/REST) and a relational database. Demonstrates entity relationships, CRUD operations, and live cloud deployment with a connected production database.",
+    link: "https://vacationplanning.netlify.app",
+  },
+  
 ];
 
 const contactConfig = {
@@ -135,5 +146,6 @@ export {
   meta,
   skills,
   socialprofils,
-  worktimeline,
+  worktimeline
 };
+
