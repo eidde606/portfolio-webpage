@@ -1,10 +1,9 @@
 import landscaping from "./assets/images/AndreyPro.png";
 import eddieanime2 from "./assets/images/eddieanime2.jpg";
-import gameHub from "./assets/images/gameHub.png";
 import myreads from "./assets/images/myreads.jpeg";
 import pelukita from "./assets/images/pelukita.png";
+import pelukitas from "./assets/images/pelukitas.png";
 import portfolio2 from "./assets/images/portfolio2.png";
-import todoList from "./assets/images/todoList.png";
 import vacation from "./assets/images/vacation.png";
 
 const logotext = "EN";
@@ -79,6 +78,11 @@ const skills = [
 
 const dataportfolio = [
   {
+    img: pelukitas,
+    description: "A full-stack web application built to streamline event bookings for a children’s party entertainment service. Users can schedule parties, choose packages, and submit event details, while the system manages bookings, updates pricing dynamically, and generates reports through a secure admin dashboard.",
+    link: "https://pelukita-frontend.onrender.com/",
+  },
+  {
     img: myreads,
 
     description:
@@ -97,18 +101,8 @@ const dataportfolio = [
       "Explore the completed landscaping website, showcasing my dedication to exceptional outdoor solutions. This project is now actively used by a real landscaping company.",
     link: "https://jocular-melomakarona-435b13.netlify.app",
   },
-  {
-    img: gameHub,
-    description:
-      "Created a responsive game catalog website with React.js and Chakra UI. Users can explore games by genre, highlighting expertise in responsive design and UI development, perfect for a web developer's portfolio.",
-    link: "https://papaya-hamster-1f1519.netlify.app",
-  },
-  {
-    img: todoList,
-    description:
-      "I built TodoList, a full-stack task management app with React and Material-UI. Users can add, edit, and delete tasks, with a responsive design for seamless usage. The app interacts with my Heroku-deployed backend, featuring MongoDB for data storage.",
-    link: "https://todolistfrontend-e161200f9920.herokuapp.com/",
-  },
+
+ 
   {
     img: pelukita,
     description:
