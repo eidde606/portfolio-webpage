@@ -10,7 +10,7 @@ const logotext = "EN";
 const meta = {
   title: "Eddie Nazario",
   description:
-    "Full-Stack Software Engineer specializing in backend-driven systems architecture. I design and develop RESTful APIs with Java and Spring Boot, model relational databases with PostgreSQL, and deliver complete end-to-end solutions with React frontends — deployed to production on cloud platforms. Founder of NazbortTech LLC, delivering custom software solutions for real businesses.",
+    "Java / Spring Boot Developer specializing in REST APIs, relational databases, and production-ready backend systems.",
 };
 
 const introdata = {
@@ -21,7 +21,7 @@ const introdata = {
     third: "Full-Stack System Builder",
   },
   description:
-    "I design and build backend-first systems using Java, Spring Boot, and relational databases, then connect them to modern frontends for complete cloud deployments.",
+    "Full-Stack Software Engineer specializing in backend-driven systems architecture. I design and develop RESTful APIs with Java and Spring Boot, model relational databases with PostgreSQL, and deliver complete end-to-end solutions with React frontends — deployed to production on cloud platforms. Founder of NazbortTech LLC, delivering custom software solutions for real businesses.",
   your_img_url: eddieanime2,
 };
 
