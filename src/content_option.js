@@ -10,7 +10,7 @@ const logotext = "EN";
 const meta = {
   title: "Eddie Nazario",
   description:
-    "Java / Spring Boot Developer specializing in REST APIs, relational databases, and production-ready backend systems.",
+    "Full-Stack Software Engineer specializing in backend-driven systems architecture. I design and develop RESTful APIs with Java and Spring Boot, model relational databases with PostgreSQL, and deliver complete end-to-end solutions with React frontends — deployed to production on cloud platforms. Founder of NazbortTech LLC, delivering custom software solutions for real businesses.",
 };
 
 const introdata = {
