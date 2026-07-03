@@ -15,9 +15,8 @@ const meta = {
 const introdata = {
   title: "Hi, I'm Eddie Nazario",
   animated: {
-    first: "Java Backend Developer",
-    second: "Spring Boot REST API Engineer",
-    third: "Full-Stack Software Engineer",
+    first: "Full-Stack Software Engineer",
+    second: "AI Integration",
   },
   description:
     "Software Engineer specializing in Java, Spring Boot, REST APIs, PostgreSQL, React, and cloud deployment. I build production-style business applications with secure payment integrations, automated email workflows, AI-powered assistants, and admin dashboards. Founder of NazbortTech LLC, delivering real-world software solutions for businesses.",
