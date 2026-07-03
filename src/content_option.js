@@ -1,58 +1,57 @@
 import landscaping from "./assets/images/AndreyPro.png";
 import eddieanime2 from "./assets/images/eddieanime2.jpg";
 import myreads from "./assets/images/myreads.jpeg";
-import pelukita from "./assets/images/pelukita.png";
+import nazbort from "./assets/images/nazbort.png";
 import pelukitas from "./assets/images/pelukitas.png";
-import portfolio2 from "./assets/images/portfolio2.png";
-import vacation from "./assets/images/vacation.png";
 
 const logotext = "EN";
+
 const meta = {
   title: "Eddie Nazario",
   description:
-    "Java / Spring Boot Developer specializing in REST APIs, relational databases, and production-ready backend systems.",
+    "Software Engineer specializing in Java, Spring Boot, REST APIs, PostgreSQL, React, AI integrations, and cloud-deployed full-stack applications.",
 };
 
 const introdata = {
   title: "Hi, I'm Eddie Nazario",
   animated: {
-    first: "Java / Spring Boot Developer",
-    second: "Backend REST API Engineer",
-    third: "Full-Stack System Builder",
+    first: "Java Backend Developer",
+    second: "Spring Boot REST API Engineer",
+    third: "Full-Stack Software Engineer",
   },
   description:
-    "Full-Stack Software Engineer specializing in backend-driven systems architecture. I design and develop RESTful APIs with Java and Spring Boot, model relational databases with PostgreSQL, and deliver complete end-to-end solutions with React frontends — deployed to production on cloud platforms. Founder of NazbortTech LLC, delivering custom software solutions for real businesses.",
+    "Software Engineer specializing in Java, Spring Boot, REST APIs, PostgreSQL, React, and cloud deployment. I build production-style business applications with secure payment integrations, automated email workflows, AI-powered assistants, and admin dashboards. Founder of NazbortTech LLC, delivering real-world software solutions for businesses.",
   your_img_url: eddieanime2,
 };
 
-
 const dataabout = {
   title: "Who am I?",
-  aboutme: `I'm Eddie Nazario, a Java backend developer based in Hopewell, VA.
+  aboutme: `I'm Eddie Nazario, a Software Engineer based in Hopewell, Virginia.
 
-I specialize in building REST APIs using Spring Boot, Spring Data JPA/REST, and relational databases. My focus is backend architecture, entity relationships, and production-style deployments.
+I specialize in building backend-driven full-stack applications using Java, Spring Boot, Spring Data JPA, REST APIs, PostgreSQL, and React.
 
-I build full-stack systems by connecting robust Java backends to Angular or React frontends, deploying them to cloud environments with live database integrations.
+My work includes production-style booking systems, payment integrations with Stripe, automated email workflows with Brevo, AI-powered assistants using OpenAI APIs, and cloud deployments through Render and Netlify.
 
-I’m bilingual (English/Spanish), detail-oriented, and focused on delivering systems that are structured, scalable, and production-ready.`,
+I hold a Bachelor of Science in Software Engineering from Western Governors University and an AAS in Information Technology from Brightpoint Community College.
+
+I'm bilingual in English and Spanish, detail-oriented, and focused on building clean, scalable software that solves real business problems.`,
 };
-
 
 const worktimeline = [
   {
-    jobtitle: "Junior React Developer",
-    where: "Vet Tech IT Services LLC",
-    date: "Feb 2020 - May 2022 / Midlothian, VA",
+    jobtitle: "Software Engineer",
+    where: "Freelance / NazbortTech LLC",
+    date: "Apr 2026 - Present / Hopewell, VA",
   },
   {
-    jobtitle: "Freelance React Developer",
-    where: "Andrey's ProLandscaping & Tree Services LLC",
-    date: "Aug 2023 - Jan 2024 / Midlothian, VA",
+    jobtitle: "Software Engineer",
+    where: "Pelukita's Show",
+    date: "Jul 2025 - Feb 2026 / Hopewell, VA",
   },
   {
-    jobtitle: "AI Chatbot Developer (Freelance)",
-    where: "Pelukita’s Show",
-    date: "Jul 2025 – Present / Hopewell, VA",
+    jobtitle: "City Mail Carrier",
+    where: "United States Postal Service",
+    date: "Jul 2017 - Present / Hopewell, VA",
   },
 ];
 
@@ -62,67 +61,61 @@ const skills = [
   { name: "REST APIs" },
   { name: "Spring Data JPA" },
   { name: "Hibernate" },
-  { name: "SQL" },
   { name: "PostgreSQL" },
   { name: "MySQL" },
+  { name: "SQL" },
+  { name: "MVC Architecture" },
+  { name: "OOP" },
   { name: "Maven" },
+  { name: "Docker" },
   { name: "Git / GitHub" },
-  { name: "Docker (Basic)" },
-
-  { name: "Angular" },
+  { name: "GitLab" },
   { name: "React" },
+  { name: "Angular" },
+  { name: "JavaScript" },
   { name: "TypeScript" },
-  { name: "JavaScript" }
+  { name: "HTML5" },
+  { name: "CSS" },
+  { name: "OpenAI API" },
+  { name: "Stripe API" },
+  { name: "Brevo API" },
+  { name: "MongoDB" },
+  { name: "Render" },
+  { name: "Netlify" },
 ];
-
 
 const dataportfolio = [
   {
     img: pelukitas,
-    description: "A full-stack web application built to streamline event bookings for a children’s party entertainment service. Users can schedule parties, choose packages, and submit event details, while the system manages bookings, updates pricing dynamically, and generates reports through a secure admin dashboard.",
+    description:
+      "Production-style full-stack booking platform built with React, Spring Boot, PostgreSQL, and Stripe. Features real-time availability logic, secure 50% deposit payments, automated receipts, Spanish contract generation, admin booking management, revenue reporting, and cloud deployment with Render and Netlify.",
     link: "https://pelukita-frontend.onrender.com/",
   },
+
   {
     img: myreads,
-
     description:
-      "MyReads streamlines bookshelf management, allowing you to effortlessly categorize your reading list and access book details with ease. Stay organized and elevate your reading experience.",
+      "React application that integrates with a REST API to organize books into custom reading shelves. Demonstrates component-based UI development, state management, asynchronous API communication, and clean frontend architecture.",
     link: "https://golden-seahorse-850414.netlify.app/",
-  },
-  {
-    img: portfolio2,
-    description:
-      "A personal web portfolio highlighting my journey as a Junior React Developer enthusiast. Discover projects, skills, and connect for potential collaborations.",
-    link: "#",
   },
   {
     img: landscaping,
     description:
-      "Explore the completed landscaping website, showcasing my dedication to exceptional outdoor solutions. This project is now actively used by a real landscaping company.",
+      "Responsive business website developed for a real landscaping company. Features service information, professional branding, mobile-friendly design, contact functionality, and production deployment for an active client.",
     link: "https://jocular-melomakarona-435b13.netlify.app",
   },
-
- 
   {
-    img: pelukita,
+    img: nazbort,
     description:
-      "An AI-powered Facebook Messenger chatbot built for a children's party entertainment business. The bot handles full event bookings in English or Spanish through natural conversation, confirms all details, and sends email confirmations using GPT-4 and MongoDB.",
-    link: "https://m.me/pelukitasshow",
+      "Official website for Nazbort Tech LLC, my software development business. Built with React to showcase custom software solutions including AI-powered assistants, booking systems, business websites, automation tools, payment integrations, and administrative dashboards. Features responsive design, lead generation, and a production deployment serving real clients.",
+    link: "https://nazborttech.com/",
   },
-  {
-    img: vacation, 
-    description:
-    "Full-stack Vacation Planning system built with Spring Boot REST (Spring Data JPA/REST) and a relational database. Demonstrates entity relationships, CRUD operations, and live cloud deployment with a connected production database.",
-    link: "https://vacationplanning.netlify.app",
-  },
-  
 ];
 
 const contactConfig = {
   YOUR_EMAIL: "eiddenazario@gmail.com",
-  description: "Looking forward to hearing from you!",
-  // creat an emailjs.com account
-  // check out this tutorial https://www.emailjs.com/docs/examples/reactjs/
+  description:
+    "Interested in working together or discussing a software engineering opportunity? Send me a message.",
   YOUR_SERVICE_ID: "service_8wjkn4p",
   YOUR_TEMPLATE_ID: "template_7cxv7i9",
   YOUR_USER_ID: "IJlyxBIWWLdS2KCZR",
@@ -132,6 +125,7 @@ const socialprofils = {
   github: "https://github.com/eidde606?tab=repositories",
   linkedin: "https://www.linkedin.com/in/eddie-nazario-20b2a320a/",
 };
+
 export {
   contactConfig,
   dataabout,
@@ -141,6 +135,5 @@ export {
   meta,
   skills,
   socialprofils,
-  worktimeline
+  worktimeline,
 };
-
